@@ -10,6 +10,7 @@ export default function Navbar() {
 			<ul className='inline-flex bg-yellow-400 w-1/3 h-8 items-center justify-evenly'>
 				<li className='text-2xl '>About</li>
 				<li className='text-2xl'>Projects</li>
+				<li className='text-2xl'>Contact</li>
 			</ul>
 		</nav>
 	)
