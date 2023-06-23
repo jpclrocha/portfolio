@@ -3,7 +3,7 @@ import TechStack from '../TechStack/TechStack'
 
 export default function AboutMe() {
 	return (
-		<div id='about' className='bg-pink-400 flex w-full h-[90vh] '>
+		<div id='about' className='bg-pink-400 flex w-full h-[70vh]'>
 			<div className='bg-yellow-500 w-[60%] p-10'>
 				<h1 className='text-4xl'>About Me</h1>
 				<p className='text-2xl'>

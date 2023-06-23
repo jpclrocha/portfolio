@@ -1,5 +1,6 @@
 import AboutMe from './AboutMe/AboutMe'
 import LandingPage from './LandingPage/LandingPage'
+import MyProjects from './MyProjects/MyProjects'
 import Navbar from './Navbar/Navbar'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 			<Navbar />
 			<LandingPage />
 			<AboutMe />
+			<MyProjects />
 		</>
 	)
 }
