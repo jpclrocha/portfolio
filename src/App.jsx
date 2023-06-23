@@ -1,3 +1,4 @@
+import AboutMe from './AboutMe/AboutMe'
 import LandingPage from './LandingPage/LandingPage'
 import Navbar from './Navbar/Navbar'
 
@@ -6,6 +7,7 @@ function App() {
 		<>
 			<Navbar />
 			<LandingPage />
+			<AboutMe />
 		</>
 	)
 }
