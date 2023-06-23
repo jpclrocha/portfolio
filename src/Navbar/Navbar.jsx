@@ -3,7 +3,6 @@ import WavingHand from './WavingHand'
 export default function Navbar() {
 	const navbarLinks = [
 		{ text: 'About Me', href: 'about' },
-		{ text: 'Skills', href: 'skills' },
 		{ text: 'Projects', href: 'projects' },
 		{ text: 'Contact', href: 'contact' },
 	]
