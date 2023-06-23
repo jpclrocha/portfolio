@@ -1,6 +1,5 @@
 import React from 'react'
 import SocialMedia from '../SocialMedia/SocialMedia'
-import TechStack from '../TechStack/TechStack'
 
 export default function LandingPage() {
 	return (
