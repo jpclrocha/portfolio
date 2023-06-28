@@ -13,7 +13,7 @@ export default function Navbar() {
 				<h1 className='pl-2 text-2xl'>Hello There!</h1>
 			</a>
 
-			<ul className='inline-flex bg-yellow-400 w-fit h-8 items-center justify-evenly'>
+			<ul className='inline-flex bg-yellow-400 w-1/2 h-8 items-center justify-evenly'>
 				{navbarLinks.map((item) => (
 					<li key={item.href} className='text-2xl m-2'>
 						<a href={`#${item.href}`}>{item.text}</a>
