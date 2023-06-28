@@ -1,33 +1,9 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect } from 'react'
 import CardProject from '../CardProject/CardProject'
 
 export default function MyProjects() {
 	const projects = [
-		{
-			image_url:
-				'https://colorsupplyyy.com/assets/color_wheel_old-922da248e23b924703b659c8cf76f0ad740222f81800eb240d389fe7a242ad73.gif',
-			name: 'teste',
-			html_url: 'https://youtube.com',
-			description: 'teste',
-			homepage: 'https://youtube.com',
-			stack: ['Java', 'HTML', 'CSS'],
-		},
-		{
-			image_url: '',
-			name: 'teste',
-			html_url: 'https://youtube.com',
-			description: 'teste',
-			homepage: 'https://youtube.com',
-			stack: ['Java', 'HTML', 'CSS'],
-		},
-		{
-			image_url: '',
-			name: 'teste',
-			html_url: 'https://youtube.com',
-			description: 'teste',
-			homepage: 'https://youtube.com',
-			stack: ['Java', 'HTML', 'CSS'],
-		},
 		{
 			image_url: '',
 			name: 'teste',
