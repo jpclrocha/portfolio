@@ -1,6 +1,7 @@
-import AboutMe from './AboutMe/AboutMe'
-import LandingPage from './LandingPage/LandingPage'
-import Navbar from './Navbar/Navbar'
+import AboutMe from './Components/AboutMe/AboutMe'
+import LandingPage from './Components/LandingPage/LandingPage'
+import MyProjects from './Components/MyProjects/MyProjects'
+import Navbar from './Components/Navbar/Navbar'
 
 function App() {
 	return (
@@ -8,6 +9,7 @@ function App() {
 			<Navbar />
 			<LandingPage />
 			<AboutMe />
+			<MyProjects />
 		</>
 	)
 }
