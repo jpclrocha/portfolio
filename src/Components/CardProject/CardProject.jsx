@@ -20,8 +20,8 @@ export default function CardProject({
 			className={`flex w-full h-fit mb-20 rounded-2xl p-6 justify-center gap-10 ${containerType[type]}`}
 		>
 			<div className='w-3/5 h-fit'>
-				<h1 className='text-2xl'>{name}</h1>
-				<p className='text-base'>{description}</p>
+				<h1 className='text-3xl'>{name}</h1>
+				<p className='text-xl'>{description}</p>
 				<div className='flex w-fit h-fit mt-5'>
 					{stack.map((item) => {
 						return (
@@ -55,7 +55,7 @@ export default function CardProject({
 			<img
 				src={image_url}
 				alt={name}
-				className='w-2/5 h-fit rounded-md'
+				className='w-1/3 h-fit rounded-md'
 			/>
 		</div>
 	)
