@@ -7,6 +7,10 @@ export default {
 				space: ['Space Mono', 'monospace'],
 				ubuntu: ['Ubuntu Mono', 'monospace'],
 			},
+			colors: {
+				'deep-blue': '#152238',
+				'deep-grey': '#ffffffde',
+			},
 		},
 	},
 	plugins: [],

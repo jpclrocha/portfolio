@@ -17,12 +17,12 @@ export default function CardProject({
 			<h1 className='text-2xl'>{name}</h1>
 			<p className='text-lg'>{description}</p>
 			<p>{stack}</p>
-			<div className='bg-yellow-200  flex w-full h-fit justify-evenly mt-3'>
+			<div className='  flex w-full h-fit justify-evenly mt-3'>
 				<a
 					href={html_url}
 					target='_blank'
 					rel='noreferrer'
-					className='bg-blue-500 flex w-[40%] h-10 justify-center items-center'
+					className='flex w-[40%] h-10 justify-center items-center'
 				>
 					Repository
 				</a>
@@ -30,7 +30,7 @@ export default function CardProject({
 					href={homepage}
 					target='_blank'
 					rel='noreferrer'
-					className='bg-blue-500 flex w-[40%] h-10 justify-center items-center'
+					className='flex w-[40%] h-10 justify-center items-center'
 				>
 					View Live
 				</a>
