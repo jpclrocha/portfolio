@@ -3,7 +3,10 @@ import SocialMedia from '../SocialMedia/SocialMedia'
 
 export default function LandingPage() {
 	return (
-		<div className='flex w-full h-[92vh] items-center justify-evenly'>
+		<div
+			className='flex w-full h-[92vh] items-center justify-evenly'
+			id='home'
+		>
 			<div className='flex flex-col items-center'>
 				<h1 className='text-7xl font-bold'>João Laranjeira</h1>
 				<h1 className='text-4xl'>Student & Developer</h1>
