@@ -15,7 +15,6 @@ import {
 
 export default function TechStack() {
 	const skills = [
-		<FaReact size={'64px'} key={0} />,
 		<FaJava size={'64px'} key={1} />,
 		<BiLogoSpringBoot size={'64px'} key={2} />,
 		<FaDocker size={'64px'} key={3} />,
@@ -32,6 +31,7 @@ export default function TechStack() {
 				<div
 					className='flex my-5 mr-5 justify-center items-center'
 					key={item}
+					title={item}
 				>
 					{item}
 				</div>
