@@ -1,12 +1,14 @@
-import React from 'react'
 import TechStack from '../TechStack/TechStack'
 
 export default function AboutMe() {
 	return (
-		<div id='about' className='flex w-full h-[70vh]'>
-			<div className='w-[60%] p-10'>
+		<div
+			id='about'
+			className='flex flex-col w-full h-fit xl:flex-row xl:h-[70vh]'
+		>
+			<div className='w-fit p-10'>
 				<h1 className='text-4xl'>About Me</h1>
-				<p className='text-2xl'>
+				<p className='text-base md:text-2xl'>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					Ipsum harum, pariatur modi fugiat sit mollitia dolores
 					dolore architecto cumque? Exercitationem suscipit expedita

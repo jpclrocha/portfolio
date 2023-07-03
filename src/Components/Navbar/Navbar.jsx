@@ -1,4 +1,4 @@
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
 import WavingHand from './WavingHand'
 
 export default function Navbar() {
@@ -8,7 +8,7 @@ export default function Navbar() {
 		{ text: 'Contact', href: 'contact' },
 	]
 	return (
-		<nav className='bg-deep-blue inline-flex  w-full h-[8vh] items-center justify-between px-12 sticky top-0'>
+		<nav className='bg-deep-blue sticky top-0 w-full p-3 inline-flex h-fit items-center justify-between lg:px-12'>
 			<Link
 				to='home'
 				className='inline-flex items-center cursor-pointer'
@@ -18,14 +18,16 @@ export default function Navbar() {
 				duration={500}
 			>
 				<WavingHand />
-				<h1 className='pl-2 text-2xl'>Hello There!</h1>
+				<h1 className='pl-2 text-2xl sm:text-lg lg:text-2xl'>
+					Hello There!
+				</h1>
 			</Link>
 
-			<ul className='inline-flex w-1/2 h-8 items-center justify-evenly'>
+			<ul className='hidden sm:inline-flex w-1/2 h-8 items-center justify-evenly'>
 				{navbarLinks.map((item) => (
 					<Link
 						key={item.text}
-						className='text-2xl m-2 cursor-pointer'
+						className='text-2xl m-2 cursor-pointer sm:w-fit sm:text-lg lg:text-2xl'
 						to={item.href}
 						spy
 						smooth

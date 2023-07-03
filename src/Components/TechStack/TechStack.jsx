@@ -15,6 +15,7 @@ import {
 
 export default function TechStack() {
 	const skills = [
+		<FaReact size={'64px'} key={0} />,
 		<FaJava size={'64px'} key={1} />,
 		<BiLogoSpringBoot size={'64px'} key={2} />,
 		<FaDocker size={'64px'} key={3} />,
@@ -26,11 +27,11 @@ export default function TechStack() {
 		<FaGitAlt size={'64px'} key={9} />,
 	]
 	return (
-		<div className='flex flex-wrap w-[35vw] h-fit'>
+		<div className='flex flex-wrap w-full h-fit gap-4'>
 			{skills.map((item) => (
 				<div
-					className='flex my-5 mr-5 justify-center items-center'
-					key={item}
+					className='flex justify-center items-center'
+					key={item.key}
 					title={item}
 				>
 					{item}

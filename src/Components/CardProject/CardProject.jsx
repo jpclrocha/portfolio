@@ -1,8 +1,8 @@
 import { FaCode, FaRegEye } from 'react-icons/fa'
 
 const containerType = {
-	normal: 'flex',
-	inverted: 'flex-row-reverse',
+	normal: 'flex-row-reverse',
+	inverted: 'flex-row',
 }
 
 export default function CardProject({
@@ -17,12 +17,22 @@ export default function CardProject({
 	return (
 		<div
 			key={name}
-			className={`flex w-full h-fit mb-20 rounded-2xl p-6 justify-center gap-10 ${containerType[type]}`}
+			className={`flex flex-col w-full h-fit mb-20 justify-center lg:${containerType[type]} lg:gap-10 lg:items-center xl:items-start`}
 		>
-			<div className='w-3/5 h-fit'>
-				<h1 className='text-3xl'>{name}</h1>
-				<p className='text-xl'>{description}</p>
-				<div className='flex w-fit h-fit mt-5'>
+			<img
+				src={image_url}
+				alt={name}
+				className='w-full h-fit rounded-md lg:w-1/3'
+			/>
+
+			<div className='w-full h-fit mt-5 lg:w-3/5 lg:mt-0'>
+				<h1 className='text-2xl mb-2 md:text-4xl lg:text-2xl lg:mb-0 xl:text-4xl xl:mb-4'>
+					{name}
+				</h1>
+				<p className='text-base md:text-2xl lg:text-base xl:text-2xl xl:mb-4'>
+					{description}
+				</p>
+				<div className='flex w-fit h-fit mt-5 md:text-2xl lg:text-base lg:mt-0 xl:text-2xl xl:mb-4'>
 					{stack.map((item) => {
 						return (
 							<h1 key={item} className='mr-4'>
@@ -32,7 +42,7 @@ export default function CardProject({
 					})}
 				</div>
 
-				<div className='flex mt-3'>
+				<div className='flex mt-3 lg:mt-0'>
 					<a
 						href={repo_url}
 						target='_blank'
@@ -51,12 +61,6 @@ export default function CardProject({
 					</a>
 				</div>
 			</div>
-
-			<img
-				src={image_url}
-				alt={name}
-				className='w-1/3 h-fit rounded-md'
-			/>
 		</div>
 	)
 }

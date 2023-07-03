@@ -11,39 +11,40 @@ export default function Contact() {
 	const social = [
 		{
 			name: 'Linkedin',
-			icon: <AiOutlineLinkedin size={'64px'} />,
+			icon: <AiOutlineLinkedin size={'32px'} />,
 			url: 'https://www.linkedin.com/in/jpclrocha/',
 		},
 		{
 			name: 'GitHub',
-			icon: <AiOutlineGithub size={'64px'} />,
+			icon: <AiOutlineGithub size={'32px'} />,
 			url: 'https://github.com/jpclrocha',
 		},
 		{
 			name: 'Email',
-			icon: <AiOutlineMail size={'64px'} />,
+			icon: <AiOutlineMail size={'32px'} />,
 			url: 'mailto:jpclrocha@gmail.com',
 		},
 		{
 			name: 'Whatsapp',
-			icon: <AiOutlineWhatsApp size={'64px'} />,
+			icon: <AiOutlineWhatsApp size={'32px'} />,
 			url: 'https://api.whatsapp.com/send?phone=5582993125363',
 		},
 		{
 			name: 'Twitter',
-			icon: <AiOutlineTwitter size={'64px'} />,
+			icon: <AiOutlineTwitter size={'32px'} />,
 			url: 'https://twitter.com/notjope',
 		},
 		{
 			name: 'Instagram',
-			icon: <AiOutlineInstagram size={'64px'} />,
+			icon: <AiOutlineInstagram size={'32px'} />,
 			url: 'https://instagram.com/jpclrocha',
 		},
 	]
+
 	return (
-		<div className='flex flex-col w-full h-[80vh] p-10' id='contact'>
+		<div className='flex flex-col w-full h-fit p-10' id='contact'>
 			<h1 className='w-full h-fit text-4xl mb-5'>Contact</h1>
-			<h1 className='w-1/3 h-fit text-2xl mb-5'>
+			<h1 className='w-fit h-fit text-2xl mb-5'>
 				Get in touch with me via social media or email.
 			</h1>
 
@@ -57,7 +58,7 @@ export default function Contact() {
 							<a href={item.url} target='_blank' rel='noreferrer'>
 								{item.icon}
 							</a>
-							<h1 className='text-4xl'>{item.name}</h1>
+							<h1 className='text-xl'>{item.name}</h1>
 						</div>
 					)
 				})}

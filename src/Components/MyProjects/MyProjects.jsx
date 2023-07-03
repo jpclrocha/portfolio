@@ -36,7 +36,7 @@ export default function MyProjects() {
 
 	return (
 		<div className='flex flex-wrap w-full h-fit p-10' id='projects'>
-			<h1 className='w-[30vw] h-fit text-4xl mb-10'>My projects</h1>
+			<h1 className='w-fit h-fit text-4xl mb-10'>My projects</h1>
 
 			<div className='flex flex-wrap w-full h-fit'>
 				{projects.map((item) => (

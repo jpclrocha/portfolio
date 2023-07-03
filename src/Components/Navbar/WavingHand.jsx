@@ -1,11 +1,11 @@
 export default function WavingHand() {
 	return (
 		<svg
-			width='32x'
+			width='32px'
 			height='32px'
 			viewBox='0 0 128 128'
 			xmlns='http://www.w3.org/2000/svg'
-			xmlns:xlink='http://www.w3.org/1999/xlink'
+			xmlnsXlink='http://www.w3.org/1999/xlink'
 			aria-hidden='true'
 			role='img'
 			className='iconify iconify--noto w-8 h-8'
