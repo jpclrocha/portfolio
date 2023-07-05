@@ -1,5 +1,10 @@
 import { FaCode, FaRegEye } from 'react-icons/fa'
 
+const containerTypes = {
+	normal: 'flex-row',
+	inverted: 'flex-row-reverse',
+}
+
 export default function CardProject({
 	name,
 	description,
@@ -7,13 +12,19 @@ export default function CardProject({
 	image_url,
 	repo_url,
 	homepage,
+	type,
 }) {
 	return (
 		<div
 			key={name}
-			className={`flex flex-col-reverse w-full h-fit mb-20 justify-center lg:flex-row`}
+			className={`flex flex-wrap w-full h-fit mb-20 justify-center lg:${containerTypes[type]}`}
 		>
-			<div className='flex flex-col w-full h-fit mt-5 lg:w-3/5 lg:mt-0 lg:mr-2'>
+			<img
+				src={image_url}
+				alt={name}
+				className='w-full h-fit rounded-md lg:w-1/3'
+			/>
+			<div className='flex flex-col w-full h-fit mt-5 lg:w-3/5 lg:mt-0 lg:m-4'>
 				<h1 className='text-2xl mb-2 md:text-4xl lg:text-2xl lg:mb-0 xl:text-4xl xl:mb-4'>
 					{name}
 				</h1>
@@ -49,12 +60,6 @@ export default function CardProject({
 					</a>
 				</div>
 			</div>
-
-			<img
-				src={image_url}
-				alt={name}
-				className='w-full h-fit rounded-md lg:w-1/3'
-			/>
 		</div>
 	)
 }

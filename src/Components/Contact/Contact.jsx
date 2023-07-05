@@ -55,10 +55,15 @@ export default function Contact() {
 							key={item.name}
 							className='flex w-fit h-fit items-center'
 						>
-							<a href={item.url} target='_blank' rel='noreferrer'>
+							<a
+								href={item.url}
+								target='_blank'
+								rel='noreferrer'
+								className='inline-flex items-center'
+							>
 								{item.icon}
+								<h1 className='text-xl'>{item.name}</h1>
 							</a>
-							<h1 className='text-xl'>{item.name}</h1>
 						</div>
 					)
 				})}
