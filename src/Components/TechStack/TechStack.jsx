@@ -15,16 +15,16 @@ import {
 
 export default function TechStack() {
 	const skills = [
-		<FaReact size={'64px'} key={0} />,
-		<FaJava size={'64px'} key={1} />,
-		<BiLogoSpringBoot size={'64px'} key={2} />,
-		<FaDocker size={'64px'} key={3} />,
-		<BiLogoTailwindCss size={'64px'} key={4} />,
-		<FaCss3Alt size={'64px'} key={5} />,
-		<FaHtml5 size={'64px'} key={6} />,
-		<BiLogoJavascript size={'64px'} key={7} />,
-		<FaSass size={'64px'} key={8} />,
-		<FaGitAlt size={'64px'} key={9} />,
+		<FaReact size={'56px'} key={0} />,
+		<FaJava size={'56px'} key={1} />,
+		<BiLogoSpringBoot size={'56px'} key={2} />,
+		<FaDocker size={'56px'} key={3} />,
+		<BiLogoTailwindCss size={'56px'} key={4} />,
+		<FaCss3Alt size={'56px'} key={5} />,
+		<FaHtml5 size={'56px'} key={6} />,
+		<BiLogoJavascript size={'56px'} key={7} />,
+		<FaSass size={'56px'} key={8} />,
+		<FaGitAlt size={'56px'} key={9} />,
 	]
 	return (
 		<div className='flex flex-wrap w-full h-fit gap-4'>

@@ -17,21 +17,19 @@ export default function CardProject({
 	return (
 		<div
 			key={name}
-			className={`flex flex-wrap w-full h-fit mb-20 justify-center lg:${containerTypes[type]}`}
+			className={`flex flex-row-reverse flex-wrap w-full h-fit mb-20 justify-center`}
 		>
 			<img
 				src={image_url}
 				alt={name}
-				className='w-full h-fit rounded-md lg:w-1/3'
+				className='w-full h-fit rounded-md md:w-1/4'
 			/>
-			<div className='flex flex-col w-full h-fit mt-5 lg:w-3/5 lg:mt-0 lg:m-4'>
-				<h1 className='text-2xl mb-2 md:text-4xl lg:text-2xl lg:mb-0 xl:text-4xl xl:mb-4'>
+			<div className='flex flex-col w-full h-fit mt-5 md:mt-0 md:m-4 md:w-3/5'>
+				<h1 className='text-2xl mb-2 md:text-2xl md:mb-0 xl:text-3xl xl:mb-4'>
 					{name}
 				</h1>
-				<p className='text-base md:text-2xl lg:text-base xl:text-2xl xl:mb-4'>
-					{description}
-				</p>
-				<div className='flex w-fit h-fit mt-5 md:text-2xl lg:text-base lg:mt-0 xl:text-2xl xl:mb-4'>
+				<p className='text-base xl:text-xl xl:mb-4'>{description}</p>
+				<div className='flex w-fit h-fit mt-5 md:text-base lg:mt-0 xl:text-xl xl:mb-4'>
 					{stack.map((item) => {
 						return (
 							<h1 key={item} className='mr-4'>
@@ -41,14 +39,14 @@ export default function CardProject({
 					})}
 				</div>
 
-				<div className='flex mt-3 lg:mt-0'>
+				<div className='flex mt-3 md:mt-0'>
 					<a
 						href={repo_url}
 						target='_blank'
 						rel='noreferrer'
 						className='flex w-fit h-10 justify-center items-center m-2'
 					>
-						<FaCode size={48} />
+						<FaCode size={40} />
 					</a>
 					<a
 						href={homepage}
@@ -56,7 +54,7 @@ export default function CardProject({
 						rel='noreferrer'
 						className='flex w-fit h-10 justify-center items-center m-2'
 					>
-						<FaRegEye size={48} />
+						<FaRegEye size={40} />
 					</a>
 				</div>
 			</div>
