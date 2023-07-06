@@ -50,11 +50,11 @@ export default function Navbar() {
 						key={item.text}
 						className={`${
 							open ? 'flex' : 'hidden'
-						} flex-nowrap w-fit `}
+						} sm:flex flex-nowrap w-fit `}
 					>
 						<Link
 							key={item.text}
-							className='m-2 cursor-pointer w-fit h-fit sm:flex sm:text-lg lg:text-2xl'
+							className='text-xl m-2 cursor-pointer w-fit h-fit sm:flex lg:text-2xl'
 							to={item.href}
 							spy
 							smooth
