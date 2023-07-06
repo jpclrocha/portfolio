@@ -1,21 +1,34 @@
+import { useState } from 'react'
+import { FaBars } from 'react-icons/fa'
 import { Link } from 'react-scroll'
 import WavingHand from './WavingHand'
 
 export default function Navbar() {
 	const navbarLinks = [
-		{ text: 'About Me', href: 'about' },
+		{ text: 'About', href: 'about' },
 		{ text: 'Projects', href: 'projects' },
 		{ text: 'Contact', href: 'contact' },
 	]
+
+	const [open, setOpen] = useState(true)
+	const toggleNavbar = () => {
+		setOpen(!open)
+	}
+
+	const close = () => {
+		setOpen(false)
+	}
+
 	return (
-		<nav className='bg-deep-blue sticky top-0 w-full p-3 inline-flex h-fit items-center justify-between lg:px-12'>
+		<nav className='bg-deep-blue flex flex-wrap sticky top-0 w-full h-fit p-3 items-center justify-between sm:inline-flex lg:px-12'>
 			<Link
 				to='home'
-				className='inline-flex items-center cursor-pointer'
+				className='inline-flex items-center cursor-pointer w-fit h-fit'
 				spy
 				smooth
 				offset={-70}
 				duration={500}
+				onClick={close}
 			>
 				<WavingHand />
 				<h1 className='pl-2 text-2xl sm:text-lg lg:text-2xl'>
@@ -23,19 +36,35 @@ export default function Navbar() {
 				</h1>
 			</Link>
 
-			<ul className='hidden sm:inline-flex w-1/2 h-8 items-center justify-evenly'>
+			<button onClick={toggleNavbar} className='sm:hidden'>
+				<FaBars size={20} />
+			</button>
+
+			<ul
+				className={`bg-deep-blue ${
+					open ? 'w-2/3' : 'w-0'
+				} flex flex-col top-14 absolute h-screen duration-300 sm:inline-flex sm:items-center sm:justify-evenly sm:mt-0 sm:w-1/2 sm:h-8 sm:relative sm:flex-row sm:top-0`}
+			>
 				{navbarLinks.map((item) => (
-					<Link
+					<div
 						key={item.text}
-						className='text-2xl m-2 cursor-pointer sm:w-fit sm:text-lg lg:text-2xl'
-						to={item.href}
-						spy
-						smooth
-						offset={-70}
-						duration={500}
+						className={`${
+							open ? 'flex' : 'hidden'
+						} flex-nowrap w-fit `}
 					>
-						{item.text}
-					</Link>
+						<Link
+							key={item.text}
+							className='m-2 cursor-pointer w-fit h-fit sm:flex sm:text-lg lg:text-2xl'
+							to={item.href}
+							spy
+							smooth
+							offset={-70}
+							duration={500}
+							onClick={toggleNavbar}
+						>
+							{item.text}
+						</Link>
+					</div>
 				))}
 			</ul>
 		</nav>

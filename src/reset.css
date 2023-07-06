@@ -7,6 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.active {
+		width: 300px !important;
+	}
+}
+
 html,
 body,
 div,
