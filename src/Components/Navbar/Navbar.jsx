@@ -10,7 +10,7 @@ export default function Navbar() {
 		{ text: 'Contact', href: 'contact' },
 	]
 
-	const [open, setOpen] = useState(true)
+	const [open, setOpen] = useState(false)
 	const toggleNavbar = () => {
 		setOpen(!open)
 	}
