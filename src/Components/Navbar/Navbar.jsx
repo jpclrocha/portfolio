@@ -11,9 +11,15 @@ export default function Navbar() {
 	]
 
 	const [open, setOpen] = useState(false)
+
 	const toggleNavbar = () => {
 		document.body.classList.toggle('overflow-hidden')
 		setOpen(!open)
+	}
+
+	const closeNavbar = () => {
+		document.body.classList.remove('overflow-hidden')
+		setOpen(false)
 	}
 
 	return (
@@ -25,7 +31,7 @@ export default function Navbar() {
 				smooth
 				offset={-70}
 				duration={500}
-				onClick={toggleNavbar}
+				onClick={closeNavbar}
 			>
 				<WavingHand />
 				<h1 className='pl-2 text-2xl sm:text-lg lg:text-2xl'>
@@ -57,7 +63,7 @@ export default function Navbar() {
 							smooth
 							offset={-70}
 							duration={500}
-							onClick={toggleNavbar}
+							onClick={closeNavbar}
 						>
 							{item.text}
 						</Link>
