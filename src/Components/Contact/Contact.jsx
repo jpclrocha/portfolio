@@ -25,19 +25,9 @@ export default function Contact() {
 			url: 'mailto:jpclrocha@gmail.com',
 		},
 		{
-			name: 'Whatsapp',
-			icon: <AiOutlineWhatsApp size={'32px'} />,
-			url: 'https://api.whatsapp.com/send?phone=5582993125363',
-		},
-		{
 			name: 'Twitter',
 			icon: <AiOutlineTwitter size={'32px'} />,
 			url: 'https://twitter.com/notjope',
-		},
-		{
-			name: 'Instagram',
-			icon: <AiOutlineInstagram size={'32px'} />,
-			url: 'https://instagram.com/jpclrocha',
 		},
 	]
 

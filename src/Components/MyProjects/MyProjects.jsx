@@ -13,6 +13,16 @@ export default function MyProjects() {
 			type: 'inverted',
 		},
 		{
+			image_url: 'construcao.jpg',
+			name: 'Pong Clash',
+			repo_url: 'https://github.com/jpclrocha/pong-clash-backend',
+			description:
+				'Manage your Table Tennis team and organize tournaments in a simple way.',
+			homepage: '',
+			stack: ['Java', 'React', 'TailwindCSS'],
+			type: 'normal',
+		},
+		{
 			image_url: 'hex-color.png',
 			name: 'Hex Color',
 			repo_url: 'https://github.com/jpclrocha/hex-color',
@@ -20,16 +30,6 @@ export default function MyProjects() {
 				'This project is a simple website where you can generate a random color and copy its hex code to your clipboard.',
 			homepage: 'https://jpclrocha.github.io/hex-color/',
 			stack: ['JavaScript', 'Css'],
-			type: 'normal',
-		},
-		{
-			image_url: 'quebra-cabeca.png',
-			name: 'Quebra Cabeça',
-			repo_url: 'https://github.com/jpclrocha/quebracabeca',
-			description:
-				'This project is a simple web game where you have to put the numbers in order and the last square has to be the blank one. Looks easy, right?',
-			homepage: 'https://jpclrocha.github.io/quebracabeca/',
-			stack: ['JavaScript', 'Bootstrap'],
 			type: 'inverted',
 		},
 	]

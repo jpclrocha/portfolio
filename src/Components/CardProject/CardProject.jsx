@@ -17,7 +17,7 @@ export default function CardProject({
 	return (
 		<div
 			key={name}
-			className={`flex flex-row-reverse flex-wrap w-full h-fit mb-20 justify-center`}
+			className={`flex ${containerTypes[type]} flex-wrap w-full h-fit mb-20 justify-center`}
 		>
 			<img
 				src={image_url}
